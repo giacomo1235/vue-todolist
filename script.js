@@ -4,7 +4,7 @@ const app = new Vue ({
         newTodo: [],
         todos:[
             {text:'uscire cani',
-             done: true
+             done: false
             },
             {text:'fare spesa',
              done: false

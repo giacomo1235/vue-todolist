@@ -16,7 +16,7 @@
     
         <ul class="todo-list">
             <li v-for="(element, index) in todos" class="todo-item">
-               <div :style="element.done == true ? 'text-decoration: line-through' : 'text-decoration: none'">{{element.text}}</div>
+               <div id="prova" :style="element.done == true ? 'text-decoration: line-through' : 'text-decoration: none'" @click="element.done = !element.done" >{{element.text}}</div>
                <button class="btn-delete" @click="deleteTodo(index)">X</button>
             </li>
     
