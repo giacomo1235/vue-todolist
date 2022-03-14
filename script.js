@@ -3,13 +3,13 @@ const app = new Vue ({
     data:{
         newTodo: [],
         todos:[
-            {todo:'uscire cani',
+            {text:'uscire cani',
+             done: true
+            },
+            {text:'fare spesa',
              done: false
             },
-            {todo:'fare spesa',
-             done: false
-            },
-            {todo:'fare esercizio',
+            {text:'fare esercizio',
              done: false
             },
         ]
@@ -20,8 +20,8 @@ const app = new Vue ({
         },
         addTodo() {
             if (this.newTodo.trim() != ''){
-            this.todos.push({todo: this.newTodo.trim(), done: false} );
-            this.newTodo= '';}
+            this.todos.push({text: this.newTodo.trim(), done: false});
+            this.newTodo= '';} 
         }
     }
 
@@ -29,4 +29,6 @@ const app = new Vue ({
 
 // trim() pulisce spazi vuoti da stringa
 
-// 
+ /* if (this.NewTodo.done) {
+     
+} */
